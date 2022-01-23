@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     })
     const name = await f0.name()
     const symbol = await f0.symbol()
-    const placeholder = await f0.placeholder()
+    const placeholder = await fetch("cryptopumpkincats.gif")
     const invites = await f0.myInvites()
     document.querySelector(".box").innerHTML = template({
       title: `${name} (${symbol}) Invite List`,
